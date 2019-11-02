@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  margin: 50px 200px; 
+}
+h1{
+  margin-bottom: 20px; 
+}
+
+p{
+  font-size: 18px; 
+}
+
+input {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 5px;  
+}
+
+form {
+  display: inline-block;
+  margin-top: 5px; 
+}
