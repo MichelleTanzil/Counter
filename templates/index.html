@@ -10,15 +10,21 @@
 <body>
   <div>
       <h1>Counter</h1>
-      <p>{{session['count']}} times</p>
-
+      <p>Total count: {{count}} times</p>
+      <p>Total visits: {{visits}} visits</p>
       <form action="/increment" method='post'>
-        <input type="submit" value="Increment"/>
+        <input type="submit" value="Increment By 1" name="increment_by_one"/>
+        <input type="submit" value="Increment By 2" name="increment_by_two"/>
       </form>
-
+      <br/>
+      <form action="/increment" method='post'>
+        <input type="text" placeholder="add your own number of visits!" name="custom_increment">
+        <input type="submit">
+      </form>
+      <br/>
       <form action ="/destroy_session" method='post'>
-      <input type="submit" value="Reset"/>
-    </form>
+        <input type="submit" value="Reset"/>
+      </form>
   </div>
 </body>
 </html>
